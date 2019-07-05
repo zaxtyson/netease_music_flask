@@ -14,12 +14,12 @@
 
 所以说啦，这个爬虫目前功能并不完善，但是~~应该~~后面我还会更新的~~吧？~~
 
-##预览
+## 预览
 ![home](https://raw.githubusercontent.com/zaxtyson/netease_music_flask/master/png/home.png "主页")
 
 ![submit](https://raw.githubusercontent.com/zaxtyson/netease_music_flask/master/png/submit.png "提交页")
 
-##食用方法
+## 食用方法
 1.安装依赖库：`requests`、`BeautifulSoup`、`Flask`
 ```
 pip3 install requests bs4 flask
