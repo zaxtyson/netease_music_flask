@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>衡一内网 - 歌单同步</title>
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"
+          type="text/css">
+    <link href="{{ url_for('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet"
+          type="text/css">
+    <link href="{{ url_for('static', filename='fonts/iconic/css/material-design-iconic-font.min.css') }}"
+          rel="stylesheet"
+          type="text/css">
+    <link href="{{ url_for('static', filename='css/util.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="limiter">
+    <div class="container-login100"
+         style="background-image: url('{{ url_for('static', filename='images/bg-01.jpg') }}');">
+        <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+
+            <form action="./submit" class="login100-form validate-form" method="POST">
+                <span class="login100-form-title p-b-49">提交歌单</span>
+
+
+                <div class="wrap-input100 validate-input m-b-23" data-validate="请输入用户名">
+                    <span class="label-input100">用户名</span>
+                    <input autocomplete="off" class="input100" name="user" placeholder="君の名は" type="text">
+                    <span class="focus-input100" data-symbol="&#xf206;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="请输入密码">
+                    <span class="label-input100">密码</span>
+                    <input class="input100" name="passwd" placeholder="请输入密码" type="password">
+                    <span class="focus-input100" data-symbol="&#xf190;"></span>
+                </div>
+                <br>
+
+                <div class="wrap-input100 validate-input m-b-23" data-validate="请输入歌单链接/ID">
+                    <span class="label-input100">歌单链接/ID</span>
+                    <input autocomplete="off" class="input100" name="url"
+                           placeholder="https://music.163.com/#/playlist?id=xxxx" type="text">
+                    <span class="focus-input100" data-symbol="&#xf275;"></span>
+                </div>
+
+                <div class="container-login100-form-btn">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <button class="login100-form-btn">提交</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='vendor/jquery/jquery-3.2.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
