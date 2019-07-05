@@ -3,7 +3,7 @@
 提交网易云的歌单链接或者ID，自动爬取音乐并同步到校内网
 ****
 
-##说明：
+## 说明：
 这是学校内网计划的一部分，因为经常有同学听着广播站的歌，突然来了感觉，却不知道歌名(\*/ω＼*)。为了解决`今天早上广播站那歌叫什么名字啊`这样的问题，写了这个网易云音乐的爬虫，随便给我们的内网添加一些功能（教室电脑没有网络真麻烦）
 
 本爬虫基于`python3`，前端使用了`flask`框架，做了简单的用户认证，毕竟不可能人人都提交链接吧，这个给广播站的同学先用用
@@ -14,12 +14,12 @@
 
 所以说啦，这个爬虫目前功能并不完善，但是~~应该~~后面我还会更新的~~吧？~~
 
-##预览
-![home](https://raw.githubusercontent.com/zaxtyson/netease_music_flask/master/png/home.png "主页")
+## 预览
+![home](/png/home.png "主页")
 
-![submit](https://raw.githubusercontent.com/zaxtyson/netease_music_flask/master/png/submit.png "提交页")
+![submit](/png/submit.png "提交页")
 
-##食用方法
+## 食用方法
 1.安装依赖库：`requests`、`BeautifulSoup`、`Flask`
 ```
 pip3 install requests bs4 flask
